@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Page Title</title>
+
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+
+    #repoTable {
+      display: none;
+    }
+  </style>
+
+</head>
+
+<body>
+  <h1>GitHub Repos Table Viewer</h1>
+
+  <h2 id="errorText"></h2>
+
+  <!-- Search box text along with the button next to it -->
+
+  <input type="search" id="userNameSearch" placeholder="Search for user..">
+  <button id="submitButton">Submit</button>
+  <br><br>
+
+  <table id="repoTable" style="width:66%">
+    <tr>
+      <th>Repository Name</th>
+      <th>Repository URL</th>
+      <th>Owner</th>
+      <th>Avatar</th>
+    </tr>
+  </table>
+
+  <!-- Import script -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="reposviewer.js"></script>
+</body>
+
+
+
+</html>
